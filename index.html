@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade&family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            /* background-image: url(vv.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%; */
+            height: 100vh;
+            background-color: #000000d6;
+            object-fit: cover;
+        }
+        
+        #nav{
+            width: 100%;
+            height: 60px;
+        }
+
+        span{
+            width: 100%;
+            background-image: linear-gradient(to right, rgb(3 3 3), rgb(122 122 122 / 95%));
+            color: white;
+            height: 60px;
+            line-height: 60px;
+            /* opacity: 0.5; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        span img{
+            width: 4%;
+            height: 40px;
+            margin-top: 10px;
+        }
+
+        span h3{
+            margin-right: 12px;
+        }
+
+        #article{
+              /* clear: both; */
+               position: absolute;
+               z-index: 1;
+               top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                width: 56%;
+                height: 400px;
+                margin: auto;
+                /* opacity: 0.5; */
+                border-radius: 3px;
+                background-image: linear-gradient(to right, rgb(3 3 3), rgb(122 122 122 / 95%));
+        }
+        h1{
+            color: white;
+            margin-top: 33px;
+            font-family: 'Architects Daughter', cursive;
+            
+
+        }
+
+
+        .cont{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            margin-top: 70px;
+        }
+        div label{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap-reverse;
+            width: 100%;
+            margin-bottom: 19px;
+            
+        }
+        
+        p{
+            color: white;
+            font-family: 'Scheherazade', serif;
+        }
+
+        @media (max-width: 500px){
+            p{
+                font-size: 12px;
+            }
+            .fot a{
+                font-size: 11px;
+            }
+            .cont button{
+                font-size: 12px;
+            }
+            span img{
+                width: 5%;
+            }
+        }
+
+        label input{
+            width: 50%;
+            height: 20px;
+            border: none;
+            border-bottom: 1px solid white;
+            background: none;
+            outline: none;
+            color: white;
+            font-size: 17px;
+        }
+
+        
+        
+        button{
+            width: 64%;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 4px;
+            border: none;
+            font-family: 'Scheherazade', serif;
+            font-size: 19px;
+            margin-top: 10px;
+            background-color: #f8f8f899;
+        }
+
+        button:hover{
+            background-color: #ffffff;;
+        }
+
+        a{
+            /* font-size: 16px; */
+            font-family: 'Tajawal', sans-serif;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            border: solid 0px;
+            border-radius: 5px;
+            display: block;
+            width: 50%;
+            margin: auto;
+            padding-top: 25px;
+            margin-top: 64px;
+            line-height: 35px;
+        }
+        .fot{
+            position: relative;
+        }
+        .fot::after{
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            background-image: linear-gradient(to right, rgb(71 74 80 / 83%), rgb(39 45 71 / 49%),rgb(10 6 47 / 88%));            /* background-color: rgb(255, 255, 255); */
+        }
+
+        .gg{
+            width: 100%;
+            height: 100%;
+        }
+        .im{
+            width: 100%;
+            height: 100vh;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <span id="span">
+            <img src="lo.png"/>
+            <h3>تسجيل الدخول</h3>
+        </span>
+    </nav>
+
+    <div class="gg">
+        <img class="im" src="cc.jpg"/>
+    </div>
+
+    <article id="article">
+        <h1>Log_in</h1>
+        <div class="cont">
+            <label>
+                <input type="text"/>
+                <p>اسم المستخدم</p>
+            </label>
+
+            <label>
+                <input type="password"/>
+                <p>       كلمة المرور</p>
+            </label>
+
+            <label class="l">
+                <button>تسجيل الدخول</button>
+            </label>
+        </div>
+        <div class="fot">
+            <a href="#">أنشاء حساب جديد</a>
+        </div>      
+    </article>
+    
+</body>
+</html>
