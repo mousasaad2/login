@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3b3bff03;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+        width: 900px;
+        height: 500px;
+        margin: 50px auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        box-shadow: -5px -5px 40px -14px #000;
+        border: 1px solid #ffffff85;
+        border-radius: 10px;
+}
+
+.container .positon{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background-color: #5454ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: skew(158deg);
+    left: -120px;
+}
+.container .positon button{
+    transform: skew(22deg);
+    padding: 6px 30px;
+    color: white;
+    background-color: #5454ff;
+    border: 1px solid white;
+}
+.container .positon h3{
+    color: white;
+    text-align: center;
+    transform: skew(22deg);
+}
+.container .positon2{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background-color: #5454ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: skew(198deg);
+    right: -84px;
+    display: none;
+}
+.container .positon2 button{
+    transform: skew(-18deg);
+    padding: 6px 30px;
+    color: white;
+    background-color: #5454ff;
+    border: 1px solid white;
+    }
+    .container .positon2 h3{
+        color: white;
+        text-align: center;
+        transform: skew(-18deg);
+    }
+
+.container .log-in{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.log-in form{
+    width: 70%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.log-in form h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.log-in form .password-in,
+.log-in form .user-in{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.log-in form .password-in input,
+.log-in form .user-in input{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 4px;
+    outline: none;
+}
+.log-in form .password-in label,
+.log-in form .user-in label{
+    margin-bottom: 5px;
+}
+.log-in .checkbox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.log-in .submet{
+    padding: 7px;
+    background-color: #5454ff;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 20px;
+}
+
+
+
+
+.container .sign-in{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.sign-in form{
+    margin-top: 70px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.sign-in form h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sign-in .name{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sign-in .name .name-cheld1{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.sign-in .name .name-cheld2{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.sign-in .emile{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.sign-in .password{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.sign-in .emile input,
+.sign-in .password input,
+.sign-in .name input{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 4px;
+    outline: none;
+}
+.sign-in .emile label,
+.sign-in .password label,
+.sign-in .name label{
+    margin-bottom: 5px;
+}
+.sign-in .checkbox{
+    margin-top: 17px;
+}
+.sign-in .submet{
+    padding: 7px;
+    background-color: #5454ff;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 17px;
+}
+.btn{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.btn button{
+    padding: 7px;
+    background-color: #5454ff;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+@media(max-width:899px) {
+    .container {
+        width: 80%;
+    }
+    .container .positon{
+        width: 59%;
+        transform: skew(-12deg);
+        left: -52px;
+    }
+    .container .positon h3{
+        transform: skew(12deg);
+    }
+    .container .positon button{
+        transform: skew(12deg);
+    }
+
+    .container .positon2{
+        width: 61%;
+        transform: skew(11deg);
+        right: -60px;
+    }
+    .container .positon2 h3{
+        transform: skew(-11deg);
+    }
+    .container .positon2 button{
+        transform: skew(-11deg);
+    }
+    .checkbox .chc label{
+        font-size: 12px;
+    }
+    .checkbox a{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:800px) {
+    .container .positon{
+        width: 50%;
+        transform: skew(0);
+        left: 0;
+    }
+    .container .positon h3{
+        transform: skew(0);
+        font-size: 15px;
+    }
+    .container .positon button{
+        transform: skew(0);
+        font-size: 13px;
+    }
+
+    .container .positon2{
+        width: 50%;
+        transform: skew(0);
+        right: 0;
+    }
+    .container .positon2 h3{
+        transform: skew(0);
+        font-size: 15px;
+    }
+    .container .positon2 button{
+        transform: skew(0);
+        font-size: 13px;
+    }
+    .log-in .checkbox{
+        flex-direction: column;
+    }
+    .chc{
+        margin-bottom: 6px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    label{
+        font-size: 13px;
+    }
+}
+
+@media(max-width:620px){
+    .container .positon{
+        z-index: -1;
+    }
+    .container .positon2{
+        z-index: -1;
+    }
+    .container .log-in{
+        width: 100%;
+    }
+    .container .sign-in{
+        width: 0;
+    }
+    .btn{
+        display: block;
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        width: 90%;
+    }
+}
